@@ -58,7 +58,7 @@ public class Swagger3Config {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("新蜂商城接口文档")
+                .title("NFT商城接口文档")
                 .description("swagger接口文档")
                 .version("2.0")
                 .build();

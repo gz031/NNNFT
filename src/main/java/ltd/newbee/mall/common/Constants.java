@@ -42,5 +42,5 @@ public class Constants {
 
     public final static int TOKEN_LENGTH = 32;//token字段长度
 
-    public final static String USER_INTRO = "随新所欲，蜂富多彩";//默认简介
+    public final static String USER_INTRO = "这个用户很懒，什么都没有留下";//默认简介
 }

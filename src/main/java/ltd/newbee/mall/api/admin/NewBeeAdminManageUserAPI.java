@@ -31,12 +31,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import javax.validation.Valid;
 
-/**
- * @author 13
- * @qq交流群 796794009
- * @email 2449207463@qq.com
- * @link https://github.com/newbee-ltd
- */
 @RestController
 @Api(value = "v1", tags = "8-0.后台管理系统管理员模块接口")
 @RequestMapping("/manage-api/v1")

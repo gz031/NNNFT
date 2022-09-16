@@ -34,7 +34,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@Api(value = "v1", tags = "5.新蜂商城购物车相关接口")
+@Api(value = "v1", tags = "5.NFT商城购物车相关接口")
 @RequestMapping("/api/v1")
 public class NewBeeMallShoppingCartAPI {
 

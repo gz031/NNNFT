@@ -28,7 +28,7 @@ import javax.annotation.Resource;
 import javax.validation.Valid;
 
 @RestController
-@Api(value = "v1", tags = "2.新蜂商城用户操作相关接口")
+@Api(value = "v1", tags = "2.NFT商城用户操作相关接口")
 @RequestMapping("/api/v1")
 public class NewBeeMallPersonalAPI {
 

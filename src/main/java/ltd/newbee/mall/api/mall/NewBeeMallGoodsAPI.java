@@ -30,7 +30,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@Api(value = "v1", tags = "4.新蜂商城商品相关接口")
+@Api(value = "v1", tags = "4.NFT商城商品相关接口")
 @RequestMapping("/api/v1")
 public class NewBeeMallGoodsAPI {
 

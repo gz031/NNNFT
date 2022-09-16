@@ -27,7 +27,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
-@Api(value = "v1", tags = "1.新蜂商城首页接口")
+@Api(value = "v1", tags = "1.NFT商城首页接口")
 @RequestMapping("/api/v1")
 public class NewBeeMallIndexAPI {
 
