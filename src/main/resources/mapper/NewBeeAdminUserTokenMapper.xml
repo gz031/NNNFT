@@ -2,8 +2,8 @@
 <!--
 -->
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="ltd.newbee.mall.dao.NewBeeAdminUserTokenMapper">
-  <resultMap id="BaseResultMap" type="ltd.newbee.mall.entity.AdminUserToken">
+<mapper namespace="nft_mall.dao.NewBeeAdminUserTokenMapper">
+  <resultMap id="BaseResultMap" type="nft_mall.entity.AdminUserToken">
     <id column="admin_user_id" jdbcType="BIGINT" property="adminUserId" />
     <result column="token" jdbcType="VARCHAR" property="token" />
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
@@ -28,13 +28,13 @@
     delete from tb_newbee_mall_admin_user_token
     where admin_user_id = #{adminUserId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="ltd.newbee.mall.entity.AdminUserToken">
+  <insert id="insert" parameterType="nft_mall.entity.AdminUserToken">
     insert into tb_newbee_mall_admin_user_token (admin_user_id, token, update_time, 
       expire_time)
     values (#{adminUserId,jdbcType=BIGINT}, #{token,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, 
       #{expireTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="ltd.newbee.mall.entity.AdminUserToken">
+  <insert id="insertSelective" parameterType="nft_mall.entity.AdminUserToken">
     insert into tb_newbee_mall_admin_user_token
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="adminUserId != null">
@@ -65,7 +65,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="ltd.newbee.mall.entity.AdminUserToken">
+  <update id="updateByPrimaryKeySelective" parameterType="nft_mall.entity.AdminUserToken">
     update tb_newbee_mall_admin_user_token
     <set>
       <if test="token != null">
@@ -80,7 +80,7 @@
     </set>
     where admin_user_id = #{adminUserId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="ltd.newbee.mall.entity.AdminUserToken">
+  <update id="updateByPrimaryKey" parameterType="nft_mall.entity.AdminUserToken">
     update tb_newbee_mall_admin_user_token
     set token = #{token,jdbcType=VARCHAR},
       update_time = #{updateTime,jdbcType=TIMESTAMP},
